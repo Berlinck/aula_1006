@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Teste</title>
 </head>
 
 <body>
@@ -13,14 +13,14 @@
         <h2>Temporizador</h2>
     </div>
     <script>
-        var app = document
-            .querySelector('#app');
+        function disparaAlerta() {
 
-        texto = app.textContent;
-       
-       setInterval(() => {
-           alert(texto)
-       }, 1000);
+            var app = document
+                .querySelector('#app');
+            texto = app.textContent;
+            alert(texto)
+        }
+        setInterval(disparaAlerta, 4000);
     </script>
 </body>
 
